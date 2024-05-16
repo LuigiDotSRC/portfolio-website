@@ -1,16 +1,17 @@
-import React from 'react'; 
-import Intro from './components/Intro';
-import Portfolio from './components/Portfolio';
-import Timeline from './components/Timeline';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import ProjectsView from './pages/ProjectsView';
 
 function App() {
   return (
-    <div>
-      <Intro />
-    </div>
-  )
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/projects" />
+        </Route>
+        <Route path="/projects" component={ProjectsView} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -4,7 +4,7 @@ import GithubButton from './GithubButton';
 
 function Intro() {
   return (
-    <div className="flex items-center ml-3 justify-center text-center flex-col pt-20 pb-6">
+    <div className="flex items-center ml-3 my-4 justify-center text-center flex-col pt-20 pb-6">
       <h1 className="text-4xl md:text-6xl mb-1 md:mb-3 font-bold min-w-lg">Luigi Andre Terashima</h1>
       <p className="text-3xl md:text-2xl mb-3 font-medium">Software Developer & Computer Science Student @ TMU</p>
       <p className="text-lg max-w-2xl mb-6">
